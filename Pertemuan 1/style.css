@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.input {
+    background-color: pink;
+    padding: 10px;
+}
+
+.img1 {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.img2 {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.button {
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(red, yellow, green);
+}
+
+.paragraph p {
+    background-color: blue;
+}
+
+.paragraph>p {
+    background-color: purple;
+}
+
+.paragraph>p:first-child {
+    background-color: pink;
+}
+
+.paragraph+p {
+    background-color: greenyellow
+}
+
+.circle {
+    position: absolute;
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    right: 0;
+}

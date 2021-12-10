@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: "poppins", sans;
+        }
+        /* div {
+            width: 500px;
+            height: 500px;
+            background-color: blanchedalmond;
+        } */
+        
+        .display {
+            display: block;
+        }
+        /* display inline sizenya gabisa diganti, kalo block bisa */
+        
+        .flex {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* justify content : flex-start, flex-end, space-between, space-around, space-evenly, initial, inherit */
+        /* align-item : stretch, flex-start, flex-end, baseline, initial, inherit */
+        
+        .flex div {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: animate;
+            animation-duration: 4s;
+        }
+        
+        .animation2 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(81, 255, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: animate2;
+            animation-duration: 4s;
+        }
+        
+        .transform {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            animation: animate2 2s reverse;
+        }
+        
+        @keyframes animate {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: blue;
+            }
+            50% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+        
+        @keyframes animate2 {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(100deg);
+                color: pink;
+            }
+            100% {
+                transform: scale(10);
+            }
+        }
+        
+        .hover:hover {
+            background-color: rgb(142, 142, 206);
+        }
+        
+        p:first-child {
+            color: blue;
+        }
+        
+        input[type=text]:enabled {
+            background-color: palevioletred;
+        }
+        
+        input[type=text]:disabled {
+            background-color: grey;
+            color: white;
+        }
+        /* selector : first-child, nth-child, last-child, hover,enabled, disabled */
+    </style>
+
+</head>
+
+<body>
+    <h1>TPM - Pertemuan 2</h1>
+    <i class="fa fa-address-book" aria hidden="true"></i>
+    <div class style="background-color: rgb(187, 135, 68);">Hello World</div>
+    <span style="background-color:rgb(122, 167, 206);">Hello World</span>
+    <div class="flex">
+        <div style="background-color: red;">hello</div>
+        <div style="background-color: green">hello</div>
+        <div style="background-color:yellow;">hello</div>
+    </div>
+    <div class="animation">hellooo</div>
+    <div class="hover">hover</div>
+    <div class="animation2">hello</div>
+    <div class="transform">hellolol</div>
+    <br>
+    <div class="selectors" style="background-color:blanchedalmond;">
+        <p>pattern matching rules determine which style rules apply to elements in the document tree. </p>
+        <p>These patterns, called selectors, may range from simple element names to rich contextual patterns.</p>
+    </div>
+    <div class="selector2">
+        <form action="">
+            <label for="name">Name : </label>
+            <input type="text" value="Melissa">
+
+            <label for="major">Major : </label>
+            <input type="text" value="Business Analytics" disabled>
+        </form>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
