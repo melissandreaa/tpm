@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <header>
+            <a class="logo" href="/">
+                <img src="logo.png" alt="">
+            </a>
+
+            <nav>
+                <ul class="nav__links">
+                    <li class="home__link">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="active__link">
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#ourwork">Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- home -->
+    <div class="home" id="home">
+        <div class="home__title">
+            <h1>SkyPics</h1>
+            <h3>The sky's the limit</h3>
+        </div>
+        <div class="home__arrow">
+            <img src="arrow_down.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- about -->
+    <div class="about" id="about">
+        <h1>About Us</h1>
+        <img src="about_logo.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare sagittis, pharetra, interdum dui, donec volutpat augue. Id aliquam, laoreet cursus aliquam.</p>
+    </div>
+
+    <!-- Our work -->
+    <section class="our-work">
+        <div class="container" id="ourwork">
+            <h1>Our Work</h1>
+            <div class="image-container">
+                <img class="inner-image" src="https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" alt="lembah" />
+                <div class="inner-image-container">
+                    <div class="image-pipih"></div>
+                    <div class="image-pipih2"></div>
+                </div>
+                <img class="inner-image" src="https://images.unsplash.com/photo-1617634667039-8e4cb277ab46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=368&q=80" alt="lembah" />
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section>
+        <div class="contact" id="contact">
+
+            <div class="form">
+                <h1 class="contactme_title">Contact Us</h1>
+                <form>
+                    <div class="name">
+                        <div class="fname">
+                            <label for="fname"></label> <br>
+                            <input type="text" id="fname" name="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="lname">
+                            <label for="lname"></label> <br>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email"></label> <br>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="pg">
+                        <div class="phone">
+                            <label for="phone"></label> <br>
+                            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+
+                        <div class="gender">
+                            <div class="male">
+                                <input type="radio" name="gender" id="male" value="male" required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="female">
+                                <input type="radio" name="gender" id="female" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <textarea name="Message" id="Message" placeholder="Message" rows="7" form="contact-form"></textarea>
+
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>

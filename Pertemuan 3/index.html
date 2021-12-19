@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .our-work {
+            background-color: rgb(124, 117, 117);
+            min-height: 100vh;
+            padding: 3rem;
+        }
+        
+        .container>h1 {
+            color: white;
+            font-family: "poppins";
+        }
+        
+        .our-work>.container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .inner-image-container {
+            width: 33%;
+        }
+        
+        .inner-image-container>img {
+            width: 100%;
+        }
+        
+        .inner-image {
+            width: 30%;
+        }
+        
+        .image-pipih {
+            min-height: 150px;
+            background-image: url(https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+            height: 50%;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="our-work">
+        <div class="container">
+            <h1>Our Work</h1>
+            <div class="image-container">
+                <img class="inner-image" src="https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" alt="lembah" />
+                <div class="inner-image-container">
+                    <div class="image-pipih"></div>
+                    <div class="image-pipih"></div>
+                </div>
+                <img class="inner-image" src="https://images.unsplash.com/photo-1617634667039-8e4cb277ab46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=368&q=80" alt="lembah" />
+            </div>
+        </div>
+    </section>
+
+    <script>
+        //javascript -> defer & async 
+        // var, let, const
+        var nama = "randi";
+        let pet = "anjing";
+        //class pet, object anjing
+        const angka = 1;
+        nama = "budi";
+        angka = 2;
+        console.log(angka);
+
+        console.log(add(5, 10));
+
+        function add(a, b) {
+            return a + b;
+        }
+    </script>
+</body>
+
+</html>
